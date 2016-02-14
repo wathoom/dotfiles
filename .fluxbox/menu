@@ -1,0 +1,121 @@
+# blackbox menu, configured with style by bbconf
+
+[begin] (Menu)
+	[exec] (Terminal) {xterm -fa consolas-12 -bg black -fg green -fn 10x20}
+	[exec] (PAC) {pac}
+	[exec] (Commander) {xfe}
+	[exec] (rxvt-unicide) {rxvt-unicode -vb +sb -fg green -bg black -cr green -tint white -sh 40 -fn 9x15 -g 70x25}
+	[exec] (DualMon) {xrandr --output VGA1 --mode 1680x1050 --right-of LVDS1 --output LVDS1 --mode 1366x768}
+	[exec] (SingleMon) {xrandr --output LVDS1 --auto}
+	[exec] (Run) {fbrun }
+	[separator]
+	[submenu] (Apps) {}
+		[exec] (Gvim) {gvim}
+		[exec] (Leafpad) {leafpad}
+		[exec] (IDLE) {idle}
+		[exec] (ZimWiki) {zim}
+		[exec] (Anki) {anki}
+		[exec] (Visual CertExam) {wine "/home/hrvi/.wine/drive_c/Program Files/Visual CertExam Suite\manager.exe"}
+		[exec] (VirtualBox) {VirtualBox}
+		[exec] (Virt-Manager) {virt-manager}
+		[exec] (KeePass2) {keepass2}
+		[separator]
+		[exec] (KiCAD) {kicad}
+		[exec] (MPLAB) {mplab_ide}
+		[exec] (Arduino) {arduino}
+		[exec] (LibreCAD) {librecad}
+		[exec] (Gqrx) {gqrx}
+		[separator]
+		[exec] (BitCoin) {/home/hrvi/disk/razno/bitcoin/bitcoin-qt}
+		[exec] (LiteCoin) {/home/hrvi/disk/razno/litecoin/litecoin-qt}
+		[exec] (Phoenix2 Miner) {xterm -bg black -fg green "/home/hrvi/disk/razno/phoenix2_miner/phoenix.py mysetup.cfg"}
+		[exec] (GaeaPlus) {/home/hrvi/disk/razno/gaeapluspzs/bin/gaeapluspzs}
+		[exec] (Google Earth) {google-earth}
+		[exec] (Shutter) {shutter}
+	[end]
+	[submenu] (Igre) {}
+		[exec] (World Of Goo) {/home/hrvi/disk/Igre/WorldOfGoo/WorldOfGoo}
+		[exec] (Steam) {force_s3tc_enable=true steam}
+		[exec] (EVE) {wine ~/.wine/drive_c/EVE/eve.exe}
+		[exec] (PyFa fitter) {~/EVE/Pyfa/pyfa.py}
+		[exec] (Planescape Torment) {wine /home/hrvi/.wine/drive_c/Planescape_Torment/Torment.exe}
+		[exec] (Unreal) {wine "/home/hrvi/.wine/drive_c/UnrealTournament/System/UnrealTournament.exe"}
+		[exec] (Oolite) {/home/hrvi/disk/Igre/Oolite/oolite}
+		[exec] (Osmos) {/home/hrvi/disk/Igre/Osmos/Osmos}
+		[exec] (Polynomial) {/home/hrvi/disk/Igre/Polynomial/bin/Polynomial64}
+		[exec] (OpenTTD) {/home/hrvi/disk/Igre/openttd/openttd}
+		[exec] (FreeOrion) {/home/hrvi/disk/Igre/freeorion/freeorion}
+		[exec] (VegaStrike) {/home/hrvi/disk/Igre/vegastrike/bin/vegastrike-64}
+		[exec] (Cogs) {/home/hrvi/disk/Igre/cogs/Cogs-amd64}
+		[exec] (Hammerfight) {/home/hrvi/disk/Igre/hammerfight/Hammerfight}
+		[exec] (SteelStorm) {/home/hrvi/disk/Igre/steelstorm/steelstorm64 -basedir /home/hrvi/disk/Igre/steelstorm/}
+		[exec] (PlayOnLinux) {playonlinux}
+	[end]
+	[submenu] (Graphics) {}
+		[exec] (Comix) {comix}
+		[exec] (Image Viewer) {geeqie}
+		[exec] (Gimp) {gimp}
+		[exec] (Krita) {krita}
+		[exec] (PDFEditor) {pdfedit}
+		[exec] (XSANE) {xsane}
+	[end]
+	[submenu] (Internet) {}
+		[exec] (JDownloader) {java -jar /home/hrvi/JDownloader/JDownloader.jar}
+		[exec] (Azureus) {/home/hrvi/vuze/azureus}
+		[exec] (GFTP) {gftp}
+		[exec] (Chromium) {chromium}
+		[exec] (Icedove) {LD_BIND_NOW=1 icedove}
+		[exec] (Iceweasel) {iceweasel}
+		[exec] (Pidgin) {pidgin}
+		[exec] (Skype) {skype}
+		[exec] (Sky) {sky}
+		[exec] (Viber) {/opt/viber/Viber}
+		[exec] (TeamViewer) {teamviewer}
+		[exec] (WiCD) {wicd-client -n}
+		[exec] (Blueman) {blueman-manager}
+		[exec] (Teamspeak2) {aoss ~/TeamSpeak2RC2/TeamSpeak}
+		[exec] (Teamspeak3) {/home/hrvi/TeamSpeak3/ts3client_runscript.sh}
+		[separator]
+		[exec] (Zenmap) {zenmap}
+		[exec] (Wireshark) {wireshark}
+		[exec] (VNCviewer) {xtightvncviewer}
+	[end]
+	[submenu] (Office) {}
+		[exec] (LibreOffice) {libreoffice}
+		[exec] (muPDF) {mupdf}
+		[exec] (Calibre) {calibre}
+		[exec] (Xpad) {xpad}
+		[exec] (Scribus) {scribus}
+
+	[end]
+	[submenu] (Sound) {}
+		[exec] (Audacious) {audacious}
+		[exec] (Audacity) {audacity}
+	[end]
+	[submenu] (Video) {}
+		[exec] (Mplayer) {gmplayer}
+	[end]
+	[submenu] (System) {}
+		[exec] (htop) {xterm -bg black -fg green htop}
+		[exec] (conky) {conky}
+		[config] (Configure)
+			[submenu] (System Styles) {Choose a style...}
+      				[stylesdir] (/usr/share/fluxbox/styles)
+			[end]
+			[submenu] (User Styles) {Choose a style...}
+      				[stylesdir] (~/.fluxbox/styles)
+			[end]
+
+     			[workspaces] (Workspace List)
+			
+			[submenu] (Tools)
+   			   [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+  			   [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg}
+   			   [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png}
+    			   [exec] (Regen Menu) {fluxbox-generate_menu }
+			[end]
+	[end]
+	[separator]
+	[exec] (Lock screen) {i3lock -c 000000}
+	[exit] (Exit)
+[end]

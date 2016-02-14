@@ -1,0 +1,25 @@
+[app] (name=explorer.exe) (class=Wine)
+  [Position]	(UPPERLEFT)	{254 -15}
+[end]
+[app] (name=SWT) (class=SWT)
+  [Position]	(UPPERLEFT)	{340 163}
+  [Close]	{yes}
+[end]
+[app] (name=Pidgin) (class=Pidgin) (role=buddy_list)
+  [Position]	(UPPERLEFT)	{1167 -1}
+[end]
+[app] (name=litecoin-qt) (class=Litecoin-qt)
+  [Position]	(UPPERLEFT)	{38% 22%}
+[end]
+[app] (name=Mail) (class=Icedove) (role=3pane)
+  [Position]	(UPPERLEFT)	{11% 2%}
+[end]
+[app] (name=bitcoin-qt) (class=Bitcoin-qt)
+  [Position]	(UPPERLEFT)	{27% 22%}
+[end]
+[app] (name=calibre-gui) (class=libprs500)
+  [Position]	(UPPERLEFT)	{31% 7%}
+[end]
+[app] (name=xterm) (class=XTerm)
+  [Position]	(UPPERLEFT)	{14% 13%}
+[end]

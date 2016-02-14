@@ -1,0 +1,78 @@
+# blackbox menu, configured with style by bbconf
+
+[begin] (Menu)
+	[exec] (Terminal) {xterm -bg black -fg green -fn 10x20}
+	[exec] (Commander) {gnome-commander}
+	[exec]   (Run) {fbrun }
+	[separator]
+	[submenu] (Apps) {}
+		[exec] (Gvim) {gvim}
+		[exec] (Gedit) {gedit}
+		[exec] (IDLE) {idle}
+		[exec] (GtkEveMon) {/home/hrvi/GtkEveMon/src/gtkevemon}
+		[exec] (EFT) {wine /home/hrvi/EVE/EFT/EFT.exe}
+		[exec] (VirtualBox) {VirtualBox}
+	[end]
+	[submenu] (Igre) {}
+		[exec] (EVE - rijechka) {/home/hrvi/eve}
+		[exec] (EVE2 - worgatan) {/home/hrvi/eve2}
+		[exec] (World Of Goo) {/home/hrvi/Igre/WorldOfGoo/WorldOfGoo}
+		[exec] (Steam) {/home/hrvi/steam}
+	[end]
+	[submenu] (Graphics) {}
+		[exec] (Comix) {comix}
+		[exec] (Image Viewer) {eog}
+		[exec] (Gimp) {gimp}
+		[exec] (PDFEditor) {pdfedit}
+		[exec] (XSANE) {xsane}
+	[end]
+	[submenu] (Internet) {}
+		[exec] (JDownloader) {java -jar /home/hrvi/JDownloader/JDownloader.jar}
+		[exec] (Azureus) {/home/hrvi/Downloads/vuze/vuze}
+		[exec] (GFTP) {gftp}
+		[exec] (Opera) {opera}
+		[exec] (Thunderbird) {thunderbird}
+		[exec] (Google Earth) {~/google-earth/googleearth}
+		[exec] (Firefox) {firefox}
+		[exec] (Pidgin) {pidgin}
+		[exec] (WiCD) {wicd-client -n}
+		[exec] (Teamspeak2) {aoss ~/TeamSpeak2RC2/TeamSpeak}
+		[exec] (Teamspeak3) {/home/hrvi/TeamSpeak3/ts3client_runscript.sh}
+	[end]
+	[submenu] (Office) {}
+		[exec] (OpenOffice) {/opt/openoffice.org3/program/soffice}
+		[exec] (Evince) {evince}
+	[end]
+	[submenu] (Sound) {}
+		[exec] (Brasero) {brasero}
+		[exec] (Grip) {grip}
+		[exec] (XMMS) {xmms}
+	[end]
+	[submenu] (Video) {}
+		[exec] (Mplayer) {gmplayer}
+		[exec] (Xine) {xine}
+	[end]
+	[submenu] (System) {}
+		[exec] (htop) {xterm -bg black -fg green htop}
+		[exec] (conky) {conky}
+		[config] (Configure)
+			[submenu] (System Styles) {Choose a style...}
+      				[stylesdir] (/usr/share/fluxbox/styles)
+			[end]
+			[submenu] (User Styles) {Choose a style...}
+      				[stylesdir] (~/.fluxbox/styles)
+			[end]
+
+     			[workspaces] (Workspace List)
+			
+			[submenu] (Tools)
+   			   [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+  			   [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg}
+   			   [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png}
+    			   [exec] (Regen Menu) {fluxbox-generate_menu }
+			[end]
+	[end]
+	[separator]
+	[exec] (Lock screen) {xlock -mode blank}
+	[exit] (Exit)
+[end]

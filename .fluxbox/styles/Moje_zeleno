@@ -1,0 +1,91 @@
+toolbar:			flat solid
+toolbar.color:			rgb:00/00/00
+toolbar.button:			flat solid
+toolbar.button.color:		rgb:00/00/00
+toolbar.button.picColor:	rgb:33/66/00
+toolbar.label:			flat solid
+toolbar.label.color:		rgb:00/00/00
+toolbar.label.colorTo:		rgb:00/00/00
+toolbar.label.textColor:	rgb:33/66/00
+toolbar.windowLabel:		flat solid
+toolbar.windowLabel.color:	rgb:00/00/00
+toolbar.windowLabel.colorTo:	rgb:00/00/00
+toolbar.windowLabel.textColor:	rgb:33/66/00
+toolbar.clock:			flat solid
+toolbar.clock.color:		rgb:00/00/00
+toolbar.clock.colorTo:		rgb:00/00/00
+toolbar.clock.textColor:	rgb:00/ff/00
+toolbar.justify:		right
+toolbar.font:			lucidasans-10
+
+menu.title:			flat solid
+menu.title.color:		rgb:00/44/00
+menu.title.colorTo:		rgb:00/44/00
+menu.title.textColor:		rgb:00/00/00
+menu.title.font:		lucidasans-10
+menu.title.justify:		right
+
+menu.frame:			flat solid
+menu.frame.color:		rgb:00/00/00
+menu.frame.textColor:		rgb:33/66/00
+menu.frame.disableColor:	rgb:00/ff/00
+menu.frame.font:		lucidasans-10
+menu.frame.justify:		center
+
+menu.bullet.position:		right
+menu.bullet:			triangle
+
+menu.hilite:			flat solid
+menu.hilite.color:		rgb:00/44/00
+menu.hilite.textColor:		rgb:00/ff/00
+
+window.title.focus:		flat solid
+window.title.focus.color:	rgb:33/66/00
+window.title.unfocus:		flat solid
+window.title.unfocus.color:	rgb:00/44/00
+
+window.label.focus:		flat solid
+window.label.focus.color:	rgb:33/66/00
+window.label.focus.colorTo:	rgb:33/66/00
+window.label.focus.textColor:	rgb:00/ff/00
+window.label.unfocus:		flat solid
+window.label.unfocus.color:	rgb:00/44/00
+window.label.unfocus.textColor:	rgb:00/00/00
+
+window.button.focus:		flat solid
+window.button.focus.color:	rgb:33/66/00
+window.button.focus.picColor:	rgb:00/00/00
+window.button.unfocus:		flat solid
+window.button.unfocus.color:	rgb:00/44/00
+window.button.unfocus.picColor:	rgb:00/00/00
+
+window.handle.focus:		flat solid
+window.handle.focus.color:	rgb:33/66/00
+window.handle.focus.colorTo:	rgb:33/66/00
+window.handle.unfocus:		flat solid
+window.handle.unfocus.color:	rgb:00/44/00
+
+window.grip.focus:		flat solid
+window.grip.focus.color:	rgb:00/ff/00
+window.grip.unfocus:		flat solid
+window.grip.unfocus.color:	rgb:00/44/00
+
+window.frame.focusColor:	rgb:33/66/00
+window.frame.unfocusColor:	rgb:00/44/00
+
+window.font:			lucidasans-10
+window.justify:			right
+
+*button.pressed:		flat solid
+*button.pressed.color:		rgb:00/ff/00
+
+borderColor:			rgb:00/44/00
+
+bevelWidth:			2
+borderWidth:			1
+handleWidth:			3
+
+*textColor:			rgb:33/66/00
+*Font:				lucidasans-10
+
+rootCommand:			bsetroot -solid rgb:00/00/00
