@@ -1,0 +1,56 @@
+background no
+out_to_console yes
+out_to_x no
+max_text_width 0
+own_window no
+update_interval 1
+total_run_times 0
+short_units yes
+if_up_strictness address
+use_spacer right
+override_utf8_locale no
+cpu_avg_samples 2
+TEXT
+
+[
+{
+"full_text":":${upspeed ieth0} ${downspeed eth0}","color":"\#6666ff"
+},
+
+{
+"full_text":": ${upspeed wlan0} ${downspeed wlan0}","color":"\#6666ff"
+},
+
+{
+"full_text":":${fs_free /home}","color":"\#ffff00"
+},
+
+{
+"full_text":":${fs_free /}","color":"\#ffff00"
+},
+
+{
+"full_text":":$cpu%","color":"\#ff0000"
+},
+
+{
+"full_text":":${memperc}%","color":"\#66ffff"
+},
+
+{
+"full_text":":${swapperc}%","color":"\#66ffff"
+},
+
+{
+"full_text":":${battery_percent BAT0}%","color":"\#ff66ff"
+},
+
+{
+"full_text":":${acpitemp}","color":"\#ff66ff"
+},
+
+{
+"full_text":"${time %d.%m.%Y} ${time %H:%M}","color":"\#00ff00","separator":false
+}
+],
+
